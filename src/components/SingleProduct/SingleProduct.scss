@@ -1,0 +1,50 @@
+
+
+ 
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+
+
+.container-img {
+  overflow: hidden;
+  display: inline-block;
+}
+
+.container-img .image {
+  width: 200px;
+  height: 300px;
+  border-radius: 10px;
+  display: block;
+  transition: transform 0.25s ease;
+  box-shadow: var(--inner-shadow);
+}
+
+.container-img .image:hover {
+  transform: scale(1.5);
+  transform-origin: 50% 50%;
+  transition: ease-in-out 1s;
+  border-radius: 30px;
+}
+
+
+@media (max-width: 550px) {
+.image{
+  width: 125px !important;
+  height: 150px !important;
+}
+
+}
+
+
+
+.price {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 3px;
+  padding: 0 2px;
+  color: var(--primary-green);
+}

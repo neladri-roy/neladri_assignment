@@ -1,0 +1,21 @@
+.footer{
+    width: 100%;
+    font-size: 0.8rem;
+    bottom: 0;
+    display: flex;
+    padding-top: 3vw;
+    justify-content: center;
+}
+
+
+.footer-sign{
+    color: var(--greyDark);
+   a{
+    color: var(--primary-dark);
+   }
+}
+
+.img3{
+   padding-right: 5px;
+    color: var(--primary-dark);
+}

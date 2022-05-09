@@ -1,0 +1,83 @@
+.products{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+
+
+
+.form {
+ padding-left: 20px;
+ padding-bottom: 20px;
+ position: relative;
+ 
+  &__input {
+    width: 12rem;
+    height: 2.5rem;
+    border: none;
+    border-radius: 1rem;
+    font-size: 1.2rem;
+    padding-left: 2.2rem;
+    box-shadow: var(--inner-shadow);
+    background: none;
+    font-family: inherit;
+    color: var(--primary);
+
+    &::placeholder { color: var(--greyLight-3); padding-left: 10px; font-size: 1.2rem; }
+    &:focus { outline: none; box-shadow: var(--inner-shadow); }
+  }
+  
+}
+
+@media(max-width: 550px){
+  .form {
+    &__input {
+      box-shadow: var(--shadow);
+    }
+  }
+}
+
+
+
+.btn {
+  width: 6rem;
+  height: 3rem;
+  border-radius: 1rem;
+  margin: 10px;
+  box-shadow: var(--shadow);
+  justify-self: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: .3s ease;
+
+  &__primary {
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+    background: var(--primary);
+    box-shadow:inset .2rem .2rem 1rem var(--primary-light), 
+              inset -.2rem -.2rem 1rem var(--primary-dark),
+              var(--shadow);
+    color: var(--greyLight-1);
+
+    &:hover { color: var(--white); }
+    &:active {
+      box-shadow:inset .2rem .2rem 1rem var(--primary-dark), 
+             inset -.2rem -.2rem 1rem var(--primary-light);
+    }
+  }
+
+  &__secondary{
+    background: var(--primary-light);
+    color: var(--greyLight-1);
+  }
+}
+
+.searchImg{
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  color: var(--primary-dark);
+}
